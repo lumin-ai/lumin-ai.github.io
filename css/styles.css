@@ -98,7 +98,7 @@ body {
 #together .main-copy {
   text-align: left;
 }
-<<<<<<< HEAD #hero .circle {
+ #hero .circle {
   display: block;
   margin: 0 auto;
   border-radius: 120px;
@@ -118,10 +118,6 @@ body {
   margin: 0 auto;
   height: auto;
 }
-.apply .cta-btn {
-  =======#together h2 {
-    margin: 30px auto;
-  }
   #together h3 {
     font-weight: 300!important;
   }
