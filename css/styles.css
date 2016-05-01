@@ -10,17 +10,40 @@
   background: blue;
 }
 body {
+<<<<<<< HEAD
   font-family: 'Karla', sans-serif;
 }
 #hero {
   position: relative;
   padding: 245px 0;
   background-image: url("../img/hero-bk-m.png");
+=======
+  font-family: 'Open sans', sans-serif;
+}
+#hero {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 245px 0;
+  background: rgba(18, 115, 188, .5);
+>>>>>>> 3612a51e7c9ca87552c9c8f93440faef619517d8
   /*background:red url(''../img/hero-bk.jpg) no-repeat left top;*/
   /*background:rgba(255, 0, 0, 0.5), url(../img/hero-bk.jpg) no-repeat left top;*/
   background-repeat: no-repeat;
   background-size: cover;
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+#hero .container h1 {
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+=======
+>>>>>>> parent of 0d281f3... Updates to page
+>>>>>>> 3612a51e7c9ca87552c9c8f93440faef619517d8
 .black-bk-overlay {
   background: rgba(0, 0, 0, 0.25);
   position: absolute;
@@ -33,13 +56,43 @@ body {
 }
 #hero h1 {
   color: white;
+<<<<<<< HEAD
   max-width: 65%;
+=======
+  max-width: 55%;
+>>>>>>> 3612a51e7c9ca87552c9c8f93440faef619517d8
   margin: 0 auto;
   text-align: center;
   z-index: 90;
   font-size: 44px;
+<<<<<<< HEAD
   -webkit-transition: .5s;
   transition: .5s;
+=======
+<<<<<<< HEAD
+}
+#hero h1.hero {
+  font-weight: 600;
+  margin-bottom: 30px;
+=======
+  -webkit-transition: .5s;
+  transition: .5s;
+>>>>>>> parent of 0d281f3... Updates to page
+}
+#hero h2 {
+  color: white;
+  font-weight: 400!important;
+  width: 60%;
+<<<<<<< HEAD
+  line-height: 1.2;
+  margin: 35px auto;
+  font-size: 23px;
+  letter-spacing: normal;
+=======
+  margin:35px auto;
+
+>>>>>>> parent of 0d281f3... Updates to page
+>>>>>>> 3612a51e7c9ca87552c9c8f93440faef619517d8
 }
 #hero .mini-nav li a.active::before {
   position: absolute;
@@ -76,6 +129,32 @@ body {
 #together .main-copy {
   text-align: left;
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+#hero .circle {
+  display: block;
+  margin: 0 auto;
+  border-radius: 120px;
+  width: 120px;
+  height: 120px;
+  position: relative;
+  background: white;
+  margin-bottom: 20px;
+}
+#hero .circle img {
+  width: 80px;
+  position: absolute;
+  top: 25px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: 0 auto;
+  height: auto;
+}
+.apply .cta-btn {
+=======
+>>>>>>> 3612a51e7c9ca87552c9c8f93440faef619517d8
 #together h2 {
   margin: 30px auto;
 }
@@ -117,6 +196,10 @@ body {
   margin-bottom: 50px;
 }
 #apply .cta-btn {
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 0d281f3... Updates to page
+>>>>>>> 3612a51e7c9ca87552c9c8f93440faef619517d8
   background: white;
   color: #565a5c;
   display: inline-block;
@@ -129,6 +212,11 @@ body {
   border-radius: 3px;
   text-decoration: none;
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 3612a51e7c9ca87552c9c8f93440faef619517d8
 #footer {
   background: url('https://a1.muscache.com/airbnb/static/footer/background-7c73b7858fe7c4bc03505fc1f7f672fd.png'), #2b2d2e;
   padding: 30px 0 30px 0;
@@ -147,6 +235,10 @@ body {
   margin: 0 auto;
   margin-top: 30px;
 }
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 0d281f3... Updates to page
+>>>>>>> 3612a51e7c9ca87552c9c8f93440faef619517d8
 #footer ul.social {
   width: 600px;
   padding: 10px 0;
@@ -223,6 +315,30 @@ body {
   border-left: 0;
   border-right-color: #dce0e0;
 }
+<<<<<<< HEAD
+=======
+.coming-soon a {
+  font-size: 20px;
+  color: rgba(18, 115, 188, 1);
+  border: 2px solid rgba(18, 115, 188, 1);
+  padding: 10px 30px;
+  border-radius: 14px;
+  margin-top: 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+.coming-soon a:hover {
+  color: white;
+  border-color: white;
+}
+
+<<<<<<< HEAD
+@media(max-width: 991px) {
+  #hero h1 { max-width: 80%!important;}
+=======
+
+
+>>>>>>> 3612a51e7c9ca87552c9c8f93440faef619517d8
 .learn-holder-row img {
   border-radius: 120px;
   width: 65px;
@@ -510,4 +626,8 @@ ul.footer-content a {
     padding: 20px;
     display: none;
   }
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 0d281f3... Updates to page
+>>>>>>> 3612a51e7c9ca87552c9c8f93440faef619517d8
 }
