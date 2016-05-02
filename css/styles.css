@@ -72,6 +72,13 @@ body {
   height: 4px;
   background: #fff;
 }
+
+
+#hero .seperator {
+  background: white;
+  width: 80%;
+  margin: 0 auto;
+}
 #threes {
   background: #f5f5f5;
   padding: 60px 0;
