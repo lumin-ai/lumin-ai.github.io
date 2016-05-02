@@ -3,12 +3,6 @@
 
 /* border colorrr #aaa */
 
-.red {
-  background: red;
-}
-.blue {
-  background: blue;
-}
 body {
   font-family: 'Open sans', sans-serif;
 }
@@ -19,7 +13,9 @@ body {
   left: 0;
   right: 0;
   padding: 245px 0;
-  background: rgba(18, 115, 188, .5);
+  /*background: rgba(18, 115, 188, .5);*/
+
+  background: linear-gradient(180deg, rgba(18, 115, 188, 1), rgba(18, 115, 188, .45));
   /*background:red url(''../img/hero-bk.jpg) no-repeat left top;*/
   /*background:rgba(255, 0, 0, 0.5), url(../img/hero-bk.jpg) no-repeat left top;*/
   background-repeat: no-repeat;
@@ -90,11 +86,12 @@ body {
   position: relative;
   background: white;
   margin-bottom: 20px;
+  border: 3px solid #0071be;
 }
 #hero .circle img {
   width: 80px;
   position: absolute;
-  top: 25px;
+  top: 2px;
   right: 0;
   left: 0;
   bottom: 0;
