@@ -61,7 +61,7 @@ body {
   margin: 35px auto;
   font-size: 23px;
   letter-spacing: normal;
-  margin: 35px auto;
+  margin: 15px auto;
 }
 #hero .mini-nav li a.active::before {
   position: absolute;
@@ -76,34 +76,10 @@ body {
 
 #hero .seperator {
   background: white;
-  width: 80%;
-  margin: 0 auto;
-}
-#threes {
-  background: #f5f5f5;
-  padding: 60px 0;
-}
-#threes p {
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 20px;
-  font-weight: 300;
-}
-#together {
-  padding-top: 45px;
-  padding-bottom: 80px;
-}
-#together h2, #together p {
-  width: 80%;
-  color: #565a5c;
-  margin: 0 auto;
-}
-#together p {
-  text-align: center;
-  font-weight: 300;
-}
-#together .main-copy {
-  text-align: left;
+  height: 1px;
+  opacity: .5;;
+  width: 60%;
+  margin: 15px auto;
 }
  #hero .circle {
   display: block;
@@ -125,59 +101,12 @@ body {
   margin: 0 auto;
   height: auto;
 }
-  #together h3 {
-    font-weight: 300!important;
-  }
-  #together p {
-    margin-bottom: 40px;
-  }
-  #together .top-space {
-    padding-top: 80px;
-  }
-  #together .top-space h3 {
-    font-size: 24px;
-    margin-bottom: 14px;
-  }
-  #learn {
-    padding: 60px 0;
-    background: #f5f5f5;
-  }
-  #learn h2 {
-    margin-bottom: 30px;
-    color: #565a5c;
-  }
-  #learn .learn-holder p {
-    width: 55%;
-    margin: 0 auto;
-    text-align: left;
-    line-height: 1.7;
-  }
-  #apply {
-    padding: 30px 0 40px;
-    background: #ffb400;
-  }
-  #apply h2, #apply p {
-    color: white;
-  }
-  #apply h2 {
-    margin-bottom: 50px;
-  }
-  #apply .cta-btn {
-    background: white;
-    color: #565a5c;
-    display: inline-block;
-    width: 300px;
-    padding: 10px 0;
-    margin: 0 auto;
-    margin-top: 40px;
-    border: 1px solid #aaa;
-    border-radius: 3px;
-    text-decoration: none;
-  }
   .coming-soon a {
     font-size: 20px;
-    color: rgba(18, 115, 188, 1);
-    border: 2px solid rgba(18, 115, 188, 1);
+    /*color: rgba(18, 115, 188, 1);
+    border: 2px solid rgba(18, 115, 188, 1);*/
+    color: white;
+    border: 2px solid white;
     padding: 10px 30px;
     border-radius: 14px;
     margin-top: 20px;
