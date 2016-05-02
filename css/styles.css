@@ -119,3 +119,10 @@
           height: 1200px;
         }
       }
+
+      @media(max-width: 601px) {
+        #hero h1 {
+          max-width: 90%!important;
+          margin:0 auto;
+        }
+      }
