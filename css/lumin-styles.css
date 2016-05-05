@@ -35,6 +35,8 @@ body {
 }
 #access h2 {
   font-weight: 400;
+  margin-top: 0;
+  padding-top: 0;
 }
 section.bots {
   background: rgba(18, 115, 188, 1);
@@ -63,7 +65,7 @@ section.bots h5 {
 section#access {
   background: #fff;
   height: 320px;
-  padding: 80px 0;
+  padding: 100px 0 130px 0;
 }
 .seperator {
   width: 75%;
@@ -95,7 +97,7 @@ section#access {
 }
 #demo {
   background: #fff;
-  height: 500px;
+  height: 550px;
   position: relative;
   padding-bottom: 120px;
   z-index: 0;
@@ -131,6 +133,7 @@ section.bots .circle {
 }
 section#reach .circle {
   width: 90px;
+  border: 2px solid white;
   height: 90px;
 }
 section#reach .circle img.bolt {
@@ -156,6 +159,7 @@ section#reach p {
 
 section#reach p {
   width: 80%;
+  font-size: 17px;
   padding-top: 10px;
   margin: 0 auto;
   line-height: 1.7 ;
@@ -227,7 +231,7 @@ section#explore h3 {
 section#explore p {
   color: #9da5b0;
   font-weight: 400;
-  line-height: 2.2;
+  line-height: 1.9;
 }
 section#explore p {
   width: 90%;
