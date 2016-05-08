@@ -19,15 +19,17 @@
     <div class="container">
       <div class="row">
         <div class="col-md-11">
-        <h1>We Make Intelligent Bots for Smart Brands</h1>
-        <h3>Conversations to Excite and Engage your customers.</h3>
-        <a href="#">Request Demo</a>
+          <h1>We make intelligent bots for smart brands</h1>
+          <h3>Conversations to excite and engage your customers.</h3>
+          <div id="demo-row">
+            <a id="demo-btn" onclick="openDemoForm()">Request Demo</a>
+            <input id="signup-input" type="email" placeholder="Enter Email Address">
+            <a id="signup-btn">Signup Now</a>
+          </div>
         </div>
       </div>
     </div>
   </section>
-
-
 
   <section id="particles-js" class="bots">
     <div class="container">
@@ -45,23 +47,24 @@
         <h2>Bots Are the Next Big Thing</h2>
         <div class="seperator"></div>
         <h5>The top 4 messenging apps have over 1.4B users.
-        Bots from Lumin.ai can bring engagement to another level.</h5>
+        Bots from Lumin.ai can bring engagement to another level.
+        </h5>
+        <!-- <div class="seperator"></div> -->
       </div>
     </div>
-
     <section id="reach">
       <div class="container">
         <div class="row text-center">
           <div class="col-sm-4">
             <div class="circle">
-                <img class="bolt" src="img/satellite-dish.png" alt="Satellite Dish">
+              <img class="bolt" src="img/satellite-dish.png" alt="Satellite Dish">
             </div>
             <h3>Reach customers</h3>
             <p>Interact with consumers in the messaging apps they already use.</p>
           </div>
           <div class="col-sm-4">
             <div class="circle">
-                <img class="bolt" src="img/messaging.png" alt="Respond Immediately Icon">
+              <img class="bolt" src="img/messaging.png" alt="Respond Immediately Icon">
             </div>
             <h3>Reduce Friction</h3>
             <p>Chatbots provide a rich experience without downloading yet another app.</p>
@@ -89,12 +92,16 @@
 
 
 
-
-
   <section id="demo">
     <div class="container">
       <div class="row text-center">
 
+        <a class="left" href="#carousel" data-slide="prev">
+          <span class="ion-ios-arrow-left"></span>
+        </a>
+        <a class="right" href="#carousel" data-slide="next">
+          <span class="ion-ios-arrow-right"></span>
+        </a>
 
         <div id="carousel" class="carousel slide" data-ride="carousel">
           <!-- <ol class="carousel-indicators">
@@ -103,73 +110,161 @@
             <li data-target="#carousel" data-slide-to="2"></li>
           </ol> -->
           <h1>Understand conversations, not just commands</h1>
+          <div class="seperator"></div>
           <div class="carousel-inner">
-            <div class="item active">
+            <!-- <div class="item active">
               <div class="row">
                 <div class="col-xs-12 text-center">
-                  <h3>Dumb bots have a hard time when the user changes their mind</h3>
+                  <h3>
+                    Dumb bots look for rigid commands, but conversational interfaces lead consumers to use natural language.
+                  <br>
+                  <br>
+                   Lack of understanding leads frustrated users to abandon the experience.</h5>
+                </div>
+              </div>
+              <div class="iphone">
+                <div class="iphone-top">
+                  <span class="camera"></span>
+                  <span class="sensor"></span>
+                  <span class="speaker"></span>
+                </div>
+                <div class="top-bar"></div>
+                <div class="iphone-screen">
+                  <img src="img/conversation-a.png" alt="">
+                </div>
+                <div class="buttons">
+                  <span class="on-off"></span>
+                  <span class="sleep"></span>
+                  <span class="up"></span>
+                  <span class="down"></span>
+                </div>
+                <div class="bottom-bar"></div>
+                <div class="iphone-bottom">
+                  <span></span>
+                </div>
+              </div>
+            </div> -->
+            <div class="item active">
+              <div class="row">
+                <div class="col-xs-12">
+                  <h3>Dumb bots use rigid decision trees that look for one key input at a time.</h3>
                   <!-- <h5>HEy this is test copy</h5> -->
+                </div>
+              </div>
+              <div class="iphone">
+                <div class="iphone-top">
+                  <span class="camera"></span>
+                  <span class="sensor"></span>
+                  <span class="speaker"></span>
+                </div>
+                <div class="top-bar"></div>
+                <div class="iphone-screen">
+                  <img src="img/pizza-toppings.png" alt="pizza toppings conversation">
+                </div>
+                <div class="buttons">
+                  <span class="on-off"></span>
+                  <span class="sleep"></span>
+                  <span class="up"></span>
+                  <span class="down"></span>
+                </div>
+                <div class="bottom-bar"></div>
+                <div class="iphone-bottom">
+                  <span></span>
+                </div>
+              </div>
+
+            </div>
+            <div class="item">
+              <div class="row">
+                <div class="col-xs-12">
+                  <h3>Dumb bots have a hard time when the user changes their mind.</h3>
+                </div>
+              </div>
+
+              <div class="iphone">
+                <div class="iphone-top">
+                  <span class="camera"></span>
+                  <span class="sensor"></span>
+                  <span class="speaker"></span>
+                </div>
+                <div class="top-bar"></div>
+                <div class="iphone-screen">
+                  <img src="img/pizza-toppings.png" alt="">
+                </div>
+                <div class="buttons">
+                  <span class="on-off"></span>
+                  <span class="sleep"></span>
+                  <span class="up"></span>
+                  <span class="down"></span>
+                </div>
+                <div class="bottom-bar"></div>
+                <div class="iphone-bottom">
+                  <span></span>
                 </div>
               </div>
             </div>
             <div class="item">
               <div class="row">
                 <div class="col-xs-12">
-                  <h3>Dumb bots have a hard time when the user changes their mind</h3>
-                  <!-- <h5>HEy this is test copy</h5> -->
+                  <h3>Dumb bots look only for keywords to trigger responses and actions; they don’t understand negation.</h3>
+                </div>
+              </div>
+
+              <div class="iphone">
+                <div class="iphone-top">
+                  <span class="camera"></span>
+                  <span class="sensor"></span>
+                  <span class="speaker"></span>
+                </div>
+                <div class="top-bar"></div>
+                <div class="iphone-screen">
+                  <img src="img/shoes-conversation.png" alt="conversation about shoes">
+                </div>
+                <div class="buttons">
+                  <span class="on-off"></span>
+                  <span class="sleep"></span>
+                  <span class="up"></span>
+                  <span class="down"></span>
+                </div>
+                <div class="bottom-bar"></div>
+                <div class="iphone-bottom">
+                  <span></span>
                 </div>
               </div>
             </div>
+
             <div class="item">
               <div class="row">
                 <div class="col-xs-12">
-                  <h3>Dumb bots have a hard time when the user changes their mind</h3>
+                  <h3>Dumb bots have limited memory for user details and preferences.</h3>
+                </div>
+              </div>
+
+              <div class="iphone">
+                <div class="iphone-top">
+                  <span class="camera"></span>
+                  <span class="sensor"></span>
+                  <span class="speaker"></span>
+                </div>
+                <div class="top-bar"></div>
+                <div class="iphone-screen">
+                  <img src="img/weather-conversation.png" alt="Weather conversation">
+                </div>
+                <div class="buttons">
+                  <span class="on-off"></span>
+                  <span class="sleep"></span>
+                  <span class="up"></span>
+                  <span class="down"></span>
+                </div>
+                <div class="bottom-bar"></div>
+                <div class="iphone-bottom">
+                  <span></span>
                 </div>
               </div>
             </div>
           </div>
-
-          <a class="left" href="#carousel" data-slide="prev">
-            <span class="ion-ios-arrow-left"></span>
-          </a>
-          <a class="right" href="#carousel" data-slide="next">
-            <span class="ion-ios-arrow-right"></span>
-          </a>
-        </div>
-
-
-
-      </div>
-
-
-      <div class="iphone">
-        <div class="iphone-top">
-          <span class="camera"></span>
-          <span class="sensor"></span>
-          <span class="speaker"></span>
-        </div>
-        <div class="top-bar"></div>
-        <div class="iphone-screen">
-          <p class="iphone-msg">Can you tell me the current weather?</h1>
-            <p class="iphone-msg">Sure where are you located?</p>
-            <p class="iphone-msg">San Francisco, CA</p>
-            <p class="iphone-msg">Sure where are you located?</p>
-            <p class="iphone-msg">San Francisco, CA</p>
-
-
-        </div>
-        <div class="buttons">
-          <span class="on-off"></span>
-          <span class="sleep"></span>
-          <span class="up"></span>
-          <span class="down"></span>
-        </div>
-        <div class="bottom-bar"></div>
-        <div class="iphone-bottom">
-          <span></span>
         </div>
       </div>
-
 
     </div>
     </div>
@@ -181,7 +276,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-4">
-          <img class="texting"  src="img/texting.png" alt="Optimized for Texting">
+          <img class="texting" src="img/texting.png" alt="Optimized for Texting">
           <h3>Optimized for Texting</h3>
           <p>Lumin.ai was built specifically for natural language understanding of text messages. We understand bad grammar, abbreviations, and texting slang.</p>
         </div>
@@ -191,7 +286,7 @@
           <p>Bots can drive a conversation flow to collect all required information to complete a transaction – but allows the user to provide details in any order.</p>
         </div>
         <div class="col-sm-4">
-          <img class="control"  src="img/controllers.png" alt="Control icon">
+          <img class="control" src="img/controllers.png" alt="Control icon">
           <h3>Complete Control</h3>
           <p>You have full control over your bot’s personality and responses. Your bot will reinforce your brand attributes.</p>
         </div>
@@ -221,7 +316,13 @@
       <div class="row">
         <div class="col-md-offset-2 col-md-8 text-center">
           <h2>Be among the first to get access to Lumin.ai</h2>
-          <a href="#">Request Demo</a>
+          <!-- <a href="#">Request Demo</a> -->
+
+          <div id="demo-row-2">
+            <a id="demo-btn-2" onclick="openDemoFormTwo()">Request Demo</a>
+            <input id="signup-input-2" type="email" placeholder="Enter Email Address">
+            <a id="signup-btn-2">Signup Now</a>
+          </div>
         </div>
       </div>
     </div>
@@ -230,7 +331,9 @@
   <footer>
     <div class="container">
       <div class="row">
-        <p>© Copyright 2016 Lumin.ai All Rights Reserved. <a href="#">Privacy</a> | <a href="#">Terms</a></p>
+        <p>© Copyright 2016 Lumin.ai All Rights Reserved.
+          <!-- <a href="#">Privacy</a> | <a href="#">Terms</a> -->
+        </p>
       </div>
     </div>
   </footer>
@@ -252,11 +355,33 @@
   });
 
 
-  $('#carousel').on('slide.bs.carousel', function() {
-    // do something…
-    console.log("hey bebe")
-    $('#carousel .item.active').addClass('fadeOutAnim')
-  })
+  // $('#carousel').on('slide.bs.carousel', function() {
+  //   // do something…
+  //   console.log("hey bebe")
+  //   $('#carousel .item.active').addClass('fadeOutAnim')
+  // })
+
+  var openDemoForm = function() {
+    // document.getElementById("demo-btn").addClass("inactive");
+    $('#demo-btn').addClass('inactive');
+  }
+
+  var openDemoFormTwo = function() {
+    // document.getElementById("demo-btn").addClass("inactive");
+    $('#demo-btn-2').addClass('inactive');
+    $('#demo-row-2').addClass('active');
+  }
+
+
+  $("#demo-btn").bind("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function() {
+    $('#demo-btn').addClass('no-display');
+    $('#demo-row').addClass('active');
+  });
+
+  $("#demo-btn-2").bind("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function() {
+    $('#demo-btn-2').addClass('no-display');
+    $('#demo-row-2').addClass('active');
+  });
 </script>
 
 
