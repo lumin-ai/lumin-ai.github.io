@@ -128,7 +128,8 @@ section#access {
   margin: 15px auto;
   height: 1px;
   background: black;
-  opacity: .2;
+  opacity: .15;
+  border-radius: 100%!important;
 }
 .ion-ios-arrow-left {
   position: absolute;
@@ -166,9 +167,12 @@ section#access {
 #demo .carousel {
 
 }
+#demo h3 {
+  margin: 15px auto;
+
+}
 section#carousel .seperator {
   opacity: .5;
-
   margin: 0 auto 20px auto!important;
 }
 
@@ -382,7 +386,7 @@ section#explore .control {
   position: relative;
   margin: -80px auto 30px auto;
   -webkit-transform: scale(.75);
-  transform: scale(.85);
+  transform: scale(.83);
   animation: fadeIn 1s;
 }
 

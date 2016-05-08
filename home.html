@@ -349,29 +349,19 @@
 
 <script>
   /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-
   particlesJS.load('particles-js', 'assets/particles.json', function() {
     console.log('callback - particles.js config loaded');
   });
-
-
-  // $('#carousel').on('slide.bs.carousel', function() {
-  //   // do something…
-  //   console.log("hey bebe")
-  //   $('#carousel .item.active').addClass('fadeOutAnim')
-  // })
 
   var openDemoForm = function() {
     // document.getElementById("demo-btn").addClass("inactive");
     $('#demo-btn').addClass('inactive');
   }
-
   var openDemoFormTwo = function() {
     // document.getElementById("demo-btn").addClass("inactive");
     $('#demo-btn-2').addClass('inactive');
     $('#demo-row-2').addClass('active');
   }
-
 
   $("#demo-btn").bind("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function() {
     $('#demo-btn').addClass('no-display');
