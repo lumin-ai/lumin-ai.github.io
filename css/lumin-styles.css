@@ -69,25 +69,53 @@ a {
   /*opacity: 0;*/
 }
 #hero .signup-input, #access .signup-input-2 {
-  height: 42px;
+  height: 45px;
   text-indent: 15px;
-  width: 40%;
+  width: 45%;
   left: 0;
-  margin-top: 22px;
+  margin-top: 5px;
   padding-top: 3px;
   border: 1px solid white;
+  border-radius: 2px;
+}
+#access .signup-input-2 {
+  margin: 15px auto;
+  width: 60%;
+}
+.signup-input::-webkit-input-placeholder, .signup-input-2::-webkit-input-placeholder {
+  color: #343434;
+  font-weight: 600;
+}
+.signup-input:-moz-placeholder, .signup-input-2:-moz-placeholder {
+  /* Firefox 18- */
+  color: #343434;
+  font-weight: 600;
+}
+.signup-input::-moz-placeholder, .signup-input-2::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #343434;
+  font-weight: 600;
+}
+.signup-input:-ms-input-placeholder, .signup-input-2:-ms-input-placeholder {
+  color: #343434;
+  font-weight: 600;
+}
+#access input#saveForm.signup-btn {
+  margin: 25px auto 0 auto;
 }
 #hero .active input.signup-btn, .active input.signup-btn-2 {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  margin-left: -5px;
+  /*border-top-left-radius: 0;*/
+  /*border-bottom-left-radius: 0;*/
+  /*margin-left: -5px;*/
 }
 .signup-input, .signup-input-2, .signup-btn, .signup-btn-2 {
   opacity: 0;
+  display: none;
 }
 .active .signup-input, .active .signup-btn, .active .signup-input-2, .active .signup-btn-2 {
   animation: fadeInLeft .5s!important;
   opacity: 1;
+  display: block;
 }
 #access h2 {
   font-weight: 400;
@@ -121,7 +149,7 @@ section.bots h5 {
 }
 section#access {
   background: #fff;
-  height: 320px;
+  height: auto;
   padding: 100px 0 130px 0;
 }
 section#access input.signup-input-2 {
@@ -268,6 +296,12 @@ section#reach h3 {
 }
 #reach .request-demo-row a {
   color: white;
+}
+#hero .demo-row .signup-input {
+  margin: 15px 0 15px 2px;
+}
+#hero .demo-row .signup-input:first-child, #access .demo-row-2 .signup-input-2:first-child {
+  margin-top: 35px;
 }
 #carousel {
   padding-top: 60px;
@@ -563,10 +597,10 @@ input.signup-btn, input.signup-btn-2 {
   text-decoration: none;
   border: 0;
 }
-
 @media(max-width: 991px) {
   #demo h1, #demo h3 {
     width: 95%;
     margin: 0 auto;
   }
 }
+@media(max-width: 601px) {}
