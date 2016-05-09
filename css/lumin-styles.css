@@ -84,21 +84,17 @@ a {
 }
 .signup-input::-webkit-input-placeholder, .signup-input-2::-webkit-input-placeholder {
   color: #343434;
-  font-weight: 600;
 }
 .signup-input:-moz-placeholder, .signup-input-2:-moz-placeholder {
   /* Firefox 18- */
   color: #343434;
-  font-weight: 600;
 }
 .signup-input::-moz-placeholder, .signup-input-2::-moz-placeholder {
   /* Firefox 19+ */
   color: #343434;
-  font-weight: 600;
 }
 .signup-input:-ms-input-placeholder, .signup-input-2:-ms-input-placeholder {
   color: #343434;
-  font-weight: 600;
 }
 #access input#saveForm.signup-btn {
   margin: 25px auto 0 auto;
