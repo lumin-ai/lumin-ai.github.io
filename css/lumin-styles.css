@@ -1,5 +1,5 @@
-html  {
-   -webkit-font-smoothing: antialiased;
+html {
+  -webkit-font-smoothing: antialiased;
 }
 body {
   font-family: "Open sans", Arial;
@@ -19,15 +19,14 @@ a {
 #hero:before {
   /*background: rgba(0,0,0,.5);*/
   content: '';
-  background: linear-gradient(200deg, rgba(0,0,0,.0), rgba(0,0,0,1));
+  background: linear-gradient(200deg, rgba(0, 0, 0, .0), rgba(0, 0, 0, 1));
   position: absolute;
   /*opacity: .85;*/
-  top:0;
-  bottom:0;
-  right:0;
-  left:0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
-
 #hero h1 {
   font-size: 50px;
   line-height: 1.3;
@@ -53,59 +52,43 @@ a {
   font-weight: 500;
   text-decoration: none;
 }
-#hero a {
+#hero a.demo-btn, #access a.demo-btn-2 {
   position: absolute;
   z-index: 1;
 }
-
-
-
-#hero .demo-btn.inactive,
-#access .demo-btn-2.inactive {
-
--webkit-animation: fadeOutRight 1s;
-  animation:  fadeOutRight 1s;
+#access a.demo-btn-2 {
+  top: 44px;
+}
+#hero .demo-btn.inactive, #access .demo-btn-2.inactive {
+  -webkit-animation: fadeOutRight 1s;
+  animation: fadeOutRight 1s;
   z-index: -20;
 }
-
-
-
-
-.no-display{
+.no-display {
   display: none!important;
   /*opacity: 0;*/
 }
-#hero .signup-input,
-#access .signup-input-2 {
+#hero .signup-input, #access .signup-input-2 {
   height: 42px;
   text-indent: 15px;
   width: 40%;
-  left:0;
+  left: 0;
   margin-top: 22px;
   padding-top: 3px;
   border: 1px solid white;
 }
-
-
-#hero .active input.signup-btn {
+#hero .active input.signup-btn, .active input.signup-btn-2 {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  margin-left:-5px;
+  margin-left: -5px;
 }
-
-.signup-input,
-.signup-input-2,
-.signup-btn,
-.signup-btn-2 {
+.signup-input, .signup-input-2, .signup-btn, .signup-btn-2 {
   opacity: 0;
 }
-
-.active .signup-input,
-.active .signup-btn {
+.active .signup-input, .active .signup-btn, .active .signup-input-2, .active .signup-btn-2 {
   animation: fadeInLeft .5s!important;
   opacity: 1;
 }
-
 #access h2 {
   font-weight: 400;
   margin-top: 0;
@@ -127,7 +110,6 @@ section.bots h2 {
   font-size: 40px;
   margin: 15px 0;
   padding-top: 10px;
-
 }
 section.bots h5 {
   font-size: 22px;
@@ -141,6 +123,9 @@ section#access {
   background: #fff;
   height: 320px;
   padding: 100px 0 130px 0;
+}
+section#access input.signup-input-2 {
+  border: 1px solid #ccc;
 }
 .seperator {
   width: 85%;
@@ -182,18 +167,14 @@ section#access {
 #demo h1, #demo h3 {
   font-weight: 400;
 }
-#demo .carousel {
-
-}
+#demo .carousel {}
 #demo h3 {
   margin: 15px auto;
-
 }
 section#carousel .seperator {
   opacity: .5;
   margin: 0 auto 20px auto!important;
 }
-
 section.bots .seperator {
   background: white;
   margin-bottom: 15px;
@@ -215,15 +196,14 @@ footer a {
   height: 120px;
   border-radius: 120px;
   position: relative;
-  box-shadow: 0px 1px 2px rgba(0,0,0,.35);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, .35);
 }
 section.bots .circle {
   padding-top: 22px;
 }
 section.bots h3 {
-  text-shadow: 0px 1px 2px rgba(0,0,0,.35);
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, .35);
 }
-
 section#reach .circle {
   width: 90px;
   border: 2px solid white;
@@ -232,10 +212,10 @@ section#reach .circle {
 section#reach .circle img.bolt {
   position: absolute;
   width: 40px;
-  left:0;
-  right:0;
-  top:20px;
-  margin:0 auto;
+  left: 0;
+  right: 0;
+  top: 20px;
+  margin: 0 auto;
   height: auto;
 }
 section#reach {
@@ -244,20 +224,17 @@ section#reach {
   padding-top: 40px;
   padding-bottom: 0;
 }
-
-section#reach h3,
-section#reach p {
+section#reach h3, section#reach p {
   color: white;
   font-weight: 400;
 }
-
 section#reach p {
   width: 80%;
   font-size: 17px;
   padding-top: 10px;
   margin: 0 auto;
-  line-height: 1.7 ;
-  opacity:.8;
+  line-height: 1.7;
+  opacity: .8;
 }
 section#reach h3 {
   font-family: "Myriad Pro", Arial;
@@ -276,16 +253,15 @@ section#reach h3 {
 }
 #reach .request-demo {
   position: absolute;
-  left:0;
-  right:0;
+  left: 0;
+  right: 0;
   color: white;
   text-align: center;
-  bottom:5%;
+  bottom: 5%;
   z-index: 10;
   font-weight: 600;
   font-size: 18px;
 }
-
 #reach .request-demo-row {
   margin-top: 40px;
   text-align: center;
@@ -293,29 +269,22 @@ section#reach h3 {
 #reach .request-demo-row a {
   color: white;
 }
-
 #carousel {
   padding-top: 60px;
 }
 #carousel h1 {
-/*background: red;*/
-/*padding-bottom: 25px;*/
+  /*background: red;*/
+  /*padding-bottom: 25px;*/
 }
-
-#carousel h1,
-#carousel h3 {
+#carousel h1, #carousel h3 {
   width: 80%;
-  margin:0 auto;
+  margin: 0 auto;
 }
-
 #carousel h3 {
-min-height: 100px;
-padding-bottom: 20px;
-line-height: 1.4;
+  min-height: 100px;
+  padding-bottom: 20px;
+  line-height: 1.4;
 }
-
-
-
 canvas.particles-js-canvas-el {
   width: 100%;
   height: 100%;
@@ -326,7 +295,6 @@ canvas.particles-js-canvas-el {
 section#explore {
   background: #2b303b;
   padding: 60px 0 120px 0;
-
 }
 section#explore .col-sm-4 {
   position: relative;
@@ -337,7 +305,6 @@ section#explore h1 {
   color: white;
   font-weight: 400;
 }
-
 section#explore h3 {
   text-align: center;
   color: white;
@@ -357,9 +324,9 @@ section#explore img {
   margin: 0 auto;
   display: block;
   position: absolute;
-  top:0;
-  left:0;
-  right:0;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 section#explore .seperator {
   margin: 30px auto 50px auto;
@@ -369,31 +336,23 @@ section#explore .seperator {
 }
 section#explore .control {
   width: 52px;
-  top:8px;
+  top: 8px;
 }
-
 *, *:after, *:before {
   box-sizing: border-box;
 }
-
-.left .iphone,
-.right .iphone {
+.left .iphone, .right .iphone {
   display: none;
 }
-.left h3,
-.right h3 {
+.left h3, .right h3 {
   display: none;
 }
-
-
-#demo .active .iphone{
+#demo .active .iphone {
   animation: fadeIn 1s;
 }
-
 #demo .active h3 {
   animation: fadeInDown .5s;
 }
-
 .iphone {
   box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.3), 0 0 0 1px #999, 0 0 30px 0px rgba(0, 0, 0, 0.245);
   border: 5px solid #d9dbdc;
@@ -408,7 +367,6 @@ section#explore .control {
   transform: scale(.83);
   animation: fadeIn 1s;
 }
-
 .iphone-top {
   padding: 5px 110px 40px;
   position: relative;
@@ -531,91 +489,84 @@ section#explore .control {
   left: 4px;
   top: 4px;
 }
-
-
-
-
-
-
-
 .commentArea {
-    font: 14px Arial;
-    padding: 0 10px;
-    margin-top: 20px;
+  font: 14px Arial;
+  padding: 0 10px;
+  margin-top: 20px;
 }
-
-.bubbledLeft,.bubbledRight {
-    margin-top: 20px;
-    padding: 5px 9px;
-    max-width: 50%;
-    clear: both;
-    position: relative;
+.bubbledLeft, .bubbledRight {
+  margin-top: 20px;
+  padding: 5px 9px;
+  max-width: 50%;
+  clear: both;
+  position: relative;
 }
-
-.bubbledLeft{
-    float: left;
-    margin-right: auto;
-    -webkit-border-radius: 8px 8px 8px 0px;
-    -moz-border-radius: 8px 8px 8px 0px;
-    -o-border-radius: 8px 8px 8px 0px;
-    -ms-border-radius: 8px 8px 8px 0px;
-    border-radius: 8px 8px 8px 0px;
-    background-color: #65B045;
-    color: #ffffff;
+.bubbledLeft {
+  float: left;
+  margin-right: auto;
+  -webkit-border-radius: 8px 8px 8px 0px;
+  -moz-border-radius: 8px 8px 8px 0px;
+  -o-border-radius: 8px 8px 8px 0px;
+  -ms-border-radius: 8px 8px 8px 0px;
+  border-radius: 8px 8px 8px 0px;
+  background-color: #65B045;
+  color: #ffffff;
 }
-
 .bubbledLeft:before {
-    border-bottom: 10px solid #65B045;
-    border-left: 9px solid rgba(0, 0, 0, 0);
-    position: absolute;
-    bottom: 0;
-    left: -8px;
-    content: "";
+  border-bottom: 10px solid #65B045;
+  border-left: 9px solid rgba(0, 0, 0, 0);
+  position: absolute;
+  bottom: 0;
+  left: -8px;
+  content: "";
 }
-
-.bubbledRight{
-    float: right;
-    margin-left: auto;
-    text-align: right;
-    -webkit-border-radius: 8px 8px 0px 8px;
-    -moz-border-radius: 8px 8px 0px 8px;
-    -o-border-radius: 8px 8px 0px 8px;
-    -ms-border-radius: 8px 8px 0px 8px;
-    border-radius: 8px 8px 0px 8px;
-    background-color: #07D;
-    color: white;
+.bubbledRight {
+  float: right;
+  margin-left: auto;
+  text-align: right;
+  -webkit-border-radius: 8px 8px 0px 8px;
+  -moz-border-radius: 8px 8px 0px 8px;
+  -o-border-radius: 8px 8px 0px 8px;
+  -ms-border-radius: 8px 8px 0px 8px;
+  border-radius: 8px 8px 0px 8px;
+  background-color: #07D;
+  color: white;
 }
-
 .bubbledRight:before {
-    border-bottom: 9px solid #07D;
-    border-right: 9px solid rgba(0, 0, 0, 0);
-    position: absolute;
-    bottom: 0;
-    right: -8px;
-    content: "";
+  border-bottom: 9px solid #07D;
+  border-right: 9px solid rgba(0, 0, 0, 0);
+  position: absolute;
+  bottom: 0;
+  right: -8px;
+  content: "";
 }
-
 #access .demo-btn-2 {
-position: absolute;
-text-align: center;
-left: 0;
-right: 0;
-margin:0 auto;
-margin-top: 20px;
-width: 180px;
-z-index: 90;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 180px;
+  z-index: 90;
+}
+input.signup-btn, input.signup-btn-2 {
+  display: inline-block;
+  background: rgba(18, 115, 188, 1);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-decoration: none;
+  border: 0;
 }
 
-#hero input.signup-btn {
-display: inline-block;
-background: rgba(18, 115, 188, 1);
-color: white;
-padding: 10px 20px;
-border-radius: 8px;
-margin-top: 20px;
-font-size: 16px;
-text-transform: uppercase;
-font-weight: 500;
-text-decoration: none;
-border:0;
+@media(max-width: 991px) {
+  #demo h1, #demo h3 {
+    width: 95%;
+    margin: 0 auto;
+  }
 }
