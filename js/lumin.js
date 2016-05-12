@@ -29,15 +29,13 @@ $('.carousel').carousel({
 // Dirty form validation
 $('#formValidation').click(function() {
   if ($('#Field1').val() == '') {
-    alert('Input can not be left blank');
-  } else if ($('#Field1').val() == '') {
-    alert('Input can not be left blank');
+    alert('Please enter your name');
   } else if ($('#Field4').val() == '') {
     alert('Please enter a valid email address');
   } else if ($('#Field3').val() == '') {
-    alert('Input can not be left blank');
+    alert('Please enter a company name');
   } else if ($('#Field7').val() == '') {
-    alert('Input can not be left blank');
+    alert('Please enter a description of your bot');
   } else {
     console.log("Forms filled")
     validateForm()
@@ -46,13 +44,13 @@ $('#formValidation').click(function() {
 
 $('#formValidation2').click(function() {
   if ($('#Field9').val() == '') {
-    alert('Input can not be left blank 1');
+    alert('Please enter your name');
   } else if ($('#Field2').val() == '') {
     alert('Please enter a valid email address');
   } else if ($('#Field8').val() == '') {
-    alert('Input can not be left blank 2');
+    alert('Please enter a company name');
   } else if ($('#Field6').val() == '') {
-    alert('Input can not be left blank 3');
+    alert('Please enter a description of your Bot');
   } else {
     console.log("Forms filled")
     validateForm2()
