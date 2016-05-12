@@ -17,28 +17,11 @@
   <section id="hero">
     <div class="container">
       <div class="row">
-        <div class="col-md-11">
-          <h1>We make intelligent bots for smart brands</h1>
-          <h3>Conversations to excite and engage your customers.</h3>
+        <div class="col-md-11 signup-anim">
+          <h1>Thank you for your interest.</h1>
+          <h3>We will contact you soon.</h3>
           <div class="demo-row">
-            <a class="demo-btn" onclick="openDemoForm()">Request Demo</a>
-            <form id="form1" name="form1" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://luminai.wufoo.com/forms/z1c8ju7g16bhiau/#public">
-              <input id="Field1" class="signup-input" name="Field1" type="text" class="field text medium" value="" maxlength="255" tabindex="1" onkeyup="" placeholder="Name" requred>
-              <input id="Field4" class="signup-input" name="Field4" type="email" spellcheck="false" class="field text medium" value="" maxlength="255" tabindex="2" placeholder="email@address.com" requred>
-              <input id="Field3" class="signup-input" name="Field3" type="text" class="field text medium" value="" maxlength="255" tabindex="3" onkeyup="" placeholder="Company Name" requred>
-              <input id="Field7" class="signup-input" name="Field7" type="text" class="field text medium" value="" maxlength="255" tabindex="4" onkeyup="" placeholder="Brief Description of Bot" requred>
-
-              <a id="formValidation">
-                Request Demo
-                <!-- <input id="saveForm" name="saveForm" class="signup-btn" type="submit" value="Request Demo"> -->
-              </a>
-              <li class="hide">
-                <label for="comment">Do Not Fill This Out</label>
-                <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
-                <input type="hidden" id="idstamp" name="idstamp" value="vlYenJAM9I9jErmgLSV/fJBjsKh0oPafN+yIXV5PWQY=" />
-              </li>
-            </form>
-            <!-- <a id="signup-btn">Signup Now</a> -->
+            <!-- <a class="demo-btn" onclick="openDemoForm()">Request Demo</a> -->
           </div>
         </div>
       </div>
@@ -307,12 +290,12 @@
     </div>
   </section>
 
-  <section id="access">
+  <!-- <section id="access">
     <div class="container">
       <div class="row">
         <div class="col-md-offset-2 col-md-8 text-center">
           <h2>Contact us to learn more!</h2>
-          <!-- <a href="#">Request Demo</a> -->
+
 
           <div class="demo-row-2">
             <form id="form2" name="form1" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://luminai.wufoo.com/forms/z1c8ju7g16bhiau/#public">
@@ -323,7 +306,6 @@
 
               <a id="formValidation2">
                 Request Demo
-              <!-- <input id="saveForm" name="saveForm" class="signup-btn" type="submit" value="Request Demo" /> -->
               </a>
 
 
@@ -339,7 +321,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <footer>
     <div class="container">
@@ -365,28 +347,9 @@
     console.log('callback - particles.js config loaded');
   });
 
-  var openDemoForm = function() {
-    $('.demo-btn').addClass('inactive');
-    $('.demo-row').addClass('active');
-  }
-  var openDemoFormTwo = function() {
-    $('.demo-btn-2').addClass('inactive');
-    $('.demo-row-2').addClass('active');
-  }
-  $(".demo-btn").bind("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function() {
-    $('.demo-btn').addClass('no-display');
-    $('.demo-row').addClass('active');
-  });
-  $(".demo-btn-2").bind("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function() {
-    $('.demo-btn-2').addClass('no-display');
-    $('.demo-row-2').addClass('active');
-  });
-
   $('.carousel').carousel({
     interval: 16000
   });
-
-
 </script>
 
 
