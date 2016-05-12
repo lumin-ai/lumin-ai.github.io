@@ -23,12 +23,15 @@
           <div class="demo-row">
             <a class="demo-btn" onclick="openDemoForm()">Request Demo</a>
             <form id="form1" name="form1" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://luminai.wufoo.com/forms/z1c8ju7g16bhiau/#public">
-              <input id="Field1" class="signup-input" name="Field1" type="text" class="field text medium" value="" maxlength="255" tabindex="1" onkeyup="" placeholder="Name" requred/>
-              <input id="Field4" class="signup-input" name="Field4" type="email" spellcheck="false" class="field text medium" value="" maxlength="255" tabindex="2" placeholder="email@address.com" requred/>
-              <input id="Field3" class="signup-input" name="Field3" type="text" class="field text medium" value="" maxlength="255" tabindex="3" onkeyup="" placeholder="Company Name" requred/>
-              <input id="Field7" class="signup-input" name="Field7" type="text" class="field text medium" value="" maxlength="255" tabindex="4" onkeyup="" placeholder="Brief Description of Bot" requred/>
+              <input id="Field1" class="signup-input" name="Field1" type="text" class="field text medium" value="" maxlength="255" tabindex="1" onkeyup="" placeholder="Name" requred>
+              <input id="Field4" class="signup-input" name="Field4" type="email" spellcheck="false" class="field text medium" value="" maxlength="255" tabindex="2" placeholder="email@address.com" requred>
+              <input id="Field3" class="signup-input" name="Field3" type="text" class="field text medium" value="" maxlength="255" tabindex="3" onkeyup="" placeholder="Company Name" requred>
+              <input id="Field7" class="signup-input" name="Field7" type="text" class="field text medium" value="" maxlength="255" tabindex="4" onkeyup="" placeholder="Brief Description of Bot" requred>
 
-              <input id="saveForm" name="saveForm" class="signup-btn" type="submit" value="Request Demo" />
+              <a id="formValidation">
+                Request Demo
+                <!-- <input id="saveForm" name="saveForm" class="signup-btn" type="submit" value="Request Demo"> -->
+              </a>
               <li class="hide">
                 <label for="comment">Do Not Fill This Out</label>
                 <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
@@ -325,7 +328,6 @@
                 <input type="hidden" id="idstamp" name="idstamp" value="vlYenJAM9I9jErmgLSV/fJBjsKh0oPafN+yIXV5PWQY=" />
               </li>
 
-
             </form>
             <a class="demo-btn-2" onclick="openDemoFormTwo()">Request Demo</a>
           </div>
@@ -378,6 +380,38 @@
   $('.carousel').carousel({
     interval: 16000
   });
+
+
+
+// Dirty form validation
+  $('#formValidation').click(function() {
+    if ($('#Field1').val() == '') {
+      alert('Input can not be left blank');
+    } else if ($('#Field1').val() == '') {
+      alert('Input can not be left blank');
+    } else if ($('#Field4').val() == '') {
+      alert('Please enter a valid email address');
+    } else if ($('#Field3').val() == '') {
+      alert('Input can not be left blank');
+    } else if ($('#Field7').val() == '') {
+      alert('Input can not be left blank');
+    } else {
+      console.log("Forms filled")
+      validateForm()
+    }
+  });
+
+  var validateForm = function() {
+    var x = document.forms["form1"]["Field4"].value;
+    var atpos = x.indexOf("@");
+    var dotpos = x.lastIndexOf(".");
+    if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= x.length) {
+      alert("Please enter a valid email address");
+      return false;
+    } else {
+      document.getElementById("form1").submit();
+    }
+  }
 </script>
 
 
