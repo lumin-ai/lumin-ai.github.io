@@ -79,10 +79,9 @@ a {
   border-radius: 2px;
 }
 #hero .signup-anim {
--webkit-animation: fadeInUp 1s;
+  -webkit-animation: fadeInUp 1s;
   animation: fadeInUp 1s;
 }
-
 #access .signup-input-2 {
   margin: 15px auto;
   width: 60%;
@@ -584,6 +583,18 @@ section#explore .control {
   margin-top: 20px;
   width: 180px;
   z-index: 90;
+  /*display: none;*/
+}
+a#formValidation2 {
+  display: none;
+}
+.active a#formValidation2 {
+  display: block;
+  width: 170px;
+  margin: 30px auto 0 auto;
+}
+#access .active .demo-btn-2 {
+  display: block;
 }
 input.signup-btn, input.signup-btn-2 {
   display: inline-block;
@@ -603,5 +614,35 @@ input.signup-btn, input.signup-btn-2 {
     width: 95%;
     margin: 0 auto;
   }
+  #hero h1, #hero h3 {
+    width: 80%;
+    text-align: center;
+    margin: 20px auto;
+  }
+  #hero .signup-input, #access .signup-input-2 {
+    width: 80%;
+    margin: 20px auto!important;
+  }
+  #hero a, #access a {
+    position: absolute;
+    right: 0;
+    left: 0;
+    text-align: center;
+    margin: 15px auto 10px auto;
+    width: 230px;
+  }
+  #explore h3 {
+    /*background: red;*/
+    width: 80%;
+    margin: 15px auto;
+  }
+  #explore p {
+    width: 75%!important;
+    margin: 0 auto;
+  }
 }
-@media(max-width: 601px) {}
+@media(max-width: 601px) {
+  section#hero {
+    padding-top: 40px;
+  }
+}
