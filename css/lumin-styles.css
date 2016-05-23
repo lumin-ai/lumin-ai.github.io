@@ -15,7 +15,6 @@ a {
   background-size: cover;
   background-position: bottom bottom;
   position: relative;
-
   /*margin-top: -60px;*/
   z-index: 1;
 }
@@ -591,7 +590,6 @@ section#explore .control {
 a#formValidation2 {
   display: none;
 }
-
 img.lumin-logo {
   width: 50px;
   margin-top: 10px;
@@ -603,13 +601,11 @@ img.lumin-logo {
   z-index: 90;
   display: block;
   margin-bottom: 100px;
-
   text-shadow: 0px 1px 1px black;
 }
-
 .logo-row span {
   font-size: 37px;
-  position:absolute;
+  position: absolute;
   z-index: 900;
   margin-left: 63px;
   padding-top: 10px;
@@ -619,7 +615,6 @@ nav.navbar {
   margin-bottom: 0;
   margin-top: 0;
 }
-
 .active a#formValidation2 {
   display: block;
   width: 170px;
@@ -656,11 +651,9 @@ input.signup-btn, input.signup-btn-2 {
     margin: 10px auto 0 auto;
   }
   .logo-row {
-
     margin: 0 auto 40px auto;
     text-align: center;
     font-size: 20px;
-
   }
   .logo-row span {
     position: relative;
@@ -668,7 +661,6 @@ input.signup-btn, input.signup-btn-2 {
   img.lumin-logo {
     margin-top: 0;
   }
-
   section#reach p {
     margin: 10px auto 90px auto;
   }
@@ -698,4 +690,25 @@ input.signup-btn, input.signup-btn-2 {
   section#hero {
     padding-top: 40px;
   }
+  section#hero h1,
+  section#demo h1 {
+    font-size: 5vw;
+    width: 90%;
+    margin:0 auto;
+  }
+  section#hero h3,
+  section#demo h3 {
+    font-size: 3vw;
+  }
+
+  #demo .active .iphone {
+    width: 80%;
+  }
+  #demo .iphone-screen {
+    width: 100%;
+  }
+}
+
+@media(max-width: 401px) {
+
 }
