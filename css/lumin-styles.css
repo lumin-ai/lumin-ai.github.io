@@ -430,7 +430,8 @@ section#explore .control {
   height: 15px;
   float: left;
   background: #333;
-  margin-top: -5px;
+  position: absolute;
+  top:25px;
   border-radius: 50%;
 }
 .top-bar, .bottom-bar {
@@ -691,11 +692,19 @@ input.signup-btn, input.signup-btn-2 {
     padding-top: 40px;
   }
   section#hero h1,
-  section#demo h1 {
+  section#demo h1,
+  section#explore h1  {
     font-size: 5vw;
     width: 90%;
     margin:0 auto;
   }
+  section.bots h2  {
+    font-size: 5vw;
+  }
+  section.bots h5  {
+    font-size: 4vw!important;
+  }
+
   section#hero h3,
   section#demo h3 {
     font-size: 3vw;
@@ -713,7 +722,8 @@ input.signup-btn, input.signup-btn-2 {
 
 @media(max-width: 401px) {
   section#hero h1,
-  section#demo h1 {
+  section#demo h1,
+  section#explore h1 {
     font-size: 7vw;
   }
 
@@ -721,4 +731,13 @@ input.signup-btn, input.signup-btn-2 {
   section#demo h3 {
     font-size: 5vw;
   }
+
+  #access a.demo-btn-2 {
+    top: 64px;
+  }
+
+  section#explore .col-sm-4 {
+    padding-bottom: 50px;
+  }
+
 }
