@@ -703,12 +703,23 @@ input.signup-btn, input.signup-btn-2 {
 
   #demo .active .iphone {
     width: 80%;
+    height: auto;
+
   }
   #demo .iphone-screen {
     width: 100%;
+
   }
 }
 
 @media(max-width: 401px) {
+  section#hero h1,
+  section#demo h1 {
+    font-size: 7vw;
+  }
 
+  section#hero h3,
+  section#demo h3 {
+    font-size: 5vw;
+  }
 }
