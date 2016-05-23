@@ -726,18 +726,23 @@ input.signup-btn, input.signup-btn-2 {
   section#explore h1 {
     font-size: 7vw;
   }
-
   section#hero h3,
   section#demo h3 {
     font-size: 5vw;
   }
-
   #access a.demo-btn-2 {
     top: 64px;
   }
-
   section#explore .col-sm-4 {
     padding-bottom: 50px;
   }
+  footer p {
+    color: white;
+    width: 85%;
+    margin: 0 auto;
+  }
+section#demo {
+  height: 560px;
+}
 
 }
