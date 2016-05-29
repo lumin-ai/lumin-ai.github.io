@@ -2,7 +2,7 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 body {
-  font-family: "Open sans", Arial;
+  font-family: "Open sans", Arial, sans-serif!important;
 }
 a {
   cursor: pointer;
@@ -152,7 +152,7 @@ section.bots h5 {
 section#access {
   background: #fff;
   height: auto;
-  padding: 100px 0 130px 0;
+  padding: 100px 0 180px 0!important;
 }
 section#access input.signup-input-2 {
   border: 1px solid #ccc;
@@ -200,6 +200,7 @@ section#access input.signup-input-2 {
 #demo .carousel {}
 #demo h3 {
   margin: 15px auto;
+  margin-bottom: 25px!important;
 }
 section#carousel .seperator {
   opacity: .5;
@@ -267,7 +268,7 @@ section#reach p {
   opacity: .8;
 }
 section#reach h3 {
-  font-family: "Myriad Pro", Arial;
+  /*font-family: "Myriad Pro", Arial;*/
   margin-bottom: 0;
   margin-top: 20px;
 }
@@ -330,7 +331,7 @@ canvas.particles-js-canvas-el {
 }
 section#explore {
   background: #2b303b;
-  padding: 60px 0 120px 0;
+  padding: 60px 0 60px 0;
 }
 section#explore .col-sm-4 {
   position: relative;
@@ -344,7 +345,7 @@ section#explore h1 {
 section#explore h3 {
   text-align: center;
   color: white;
-  font-family: "Myriad Pro", Arial;
+  /*font-family: "Myriad Pro", Arial;*/
 }
 section#explore p {
   color: #9da5b0;
