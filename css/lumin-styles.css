@@ -123,6 +123,7 @@ h1, h2, h3 {
   display: block;
 }
 #access h2 {
+  color: white;
   font-weight: 400;
   margin-top: 0;
   padding-top: 0;
@@ -153,7 +154,7 @@ section.bots h5 {
   max-width: 70%;
 }
 section#access {
-  background: #fff;
+  background: #2b303b;
   height: auto;
   padding: 100px 0 180px 0!important;
 }
@@ -392,7 +393,8 @@ canvas.particles-js-canvas-el {
   z-index: 0;
 }
 section#explore {
-  background: #2b303b;
+  color: red;
+  background: #ffffff;
   padding: 60px 0 60px 0;
 }
 section#explore .col-sm-4 {
@@ -401,16 +403,17 @@ section#explore .col-sm-4 {
   padding-top: 70px;
 }
 section#explore h1 {
-  color: white;
+  color: black;
   font-weight: 400;
 }
 section#explore h3 {
   text-align: center;
-  color: white;
+  color: black;
   /*font-family: "Myriad Pro", Arial;*/
 }
 section#explore p {
-  color: #9da5b0;
+  /*color: #9da5b0;*/
+  color: #666666;
   font-weight: 400;
   line-height: 1.9;
 }
