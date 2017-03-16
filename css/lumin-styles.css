@@ -405,6 +405,7 @@ section#explore .col-sm-4 {
 section#explore h1 {
   color: black;
   font-weight: 400;
+  padding-bottom: 50px;
 }
 section#explore h3 {
   text-align: center;
