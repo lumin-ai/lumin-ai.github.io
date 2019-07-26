@@ -292,6 +292,13 @@ footer a {
   position: relative;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, .35);
 }
+
+.lumin-circle {
+  width: 120px;
+  margin: 0 auto;
+  height: 120px;
+  position: relative;
+}
 section.bots .circle {
   padding-top: 22px;
 }
@@ -393,7 +400,7 @@ canvas.particles-js-canvas-el {
   z-index: 0;
 }
 section#explore {
-  color: red;
+  color: #333333;
   background: #ffffff;
   padding: 60px 0 60px 0;
 }
@@ -803,4 +810,21 @@ input.signup-btn, input.signup-btn-2 {
   section#demo {
     height: 560px;
   }
+}
+
+.form-input {
+    width: 400px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    color: black;
+}
+.submit-button {
+    padding: 10px;
+    width: 100px;
+    color: white;
+    background-color: rgba(18, 115, 188, 1);
+    border-radius: 5px;
+    border: 2px solid rgba(18, 115, 188, 1);
 }
