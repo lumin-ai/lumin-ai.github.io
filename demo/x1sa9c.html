@@ -12,44 +12,50 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'> -->
-  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="../css/animate.css">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/lumin-styles.css">
+  <link rel="stylesheet" href="../css/lumin-styles.css">
 </head>
 
 <body>
   <section id="particles-js" class="bots">
+  <!-- <section class="bots"> -->
     <div class="container">
       <div class="row text-center">
         <div class="lumin-circle">
-        	<img src="img/lumin-logo.png" width="80%"/>
+        	<img src="../img/lumin-logo.png" width="80%"/>
         </div>
         <h2>Lumin.ai Private Demo</h2>
         <div class="separator"></div>
       </div>
     </div>
-    </section>
-    <section id="explore">
-    <h1 class="text-center">Lead-to-Appointment Scheduling</h1>
-    <div class="container form-intro">
-	    <h4 class="text-center form-intro-text">Welcome to the Lumin.ai demo for lead-to-appointment conversion. In a real-life scenario, this would be a landing page aimed at a consumer seeking our customer's goods or services, and looking to get started by making an appointment.</h4></br>
-      <h1 id="registerThankyou" style="display:none" class="text-center">Thank you!</h1>
-  	</div>
+  </section>
 
-    <!-- FORM STARTS HERE -->
-    <form method="post" target="_blank" id="registerSubmit" name="demoForm">
+  <section id="explore">
+    <h1 class="text-center">Lead-to-Appointment Scheduling</h1>
+
+    <div id="registerThankyou" style="display:none">
+      <h1 class="text-center">Thank you!</h1>
+      <h4 class="text-center form-intro-text">A Lumin.ai bot has texted you on your mobile number. Interact with it to create an appointment.</h4>
+    </div>
+
+    <div class="container form-intro" id="registerSubmit">
+	    <h4 class="text-center form-intro-text">Welcome to the Lumin.ai demo for lead-to-appointment conversion. In a real-life scenario, this would be a landing page aimed at a consumer seeking our customer's goods or services, and looking to get started by making an appointment.</h4>
       <h6 class="text-center">Please enter your information below and press Submit.</br> You will receive a text from the bot, offering to make an appointment with you.</h6>
-    	<div class="container text-center">
-    		<div><input type="text" id="given_name" name="given_name" value="First Name*" onfocus="this.value=''" class="form-input"/></div>
-    		<div><input type="text" id="surname" name="surname" value="Last Name*" onfocus="this.value=''" class="form-input"/></div>
-    		<div><input type="text" id="lead_phone" name="lead_phone" value="Mobile Number*" onfocus="this.value=''" class="form-input"/></div>
-    		<div><input type="text" id="lead_email" name="lead_email" value="Email*" onfocus="this.value=''" class="form-input"/></div>
-        <div><input type="text" id="token" name="token" value="Token*" onfocus="this.value=''" class="form-input"/></div>
-    	  <div>
-    			<button type="submit" class="submit-button">Submit</button>
-    		</div>
-    	</div>
-		</form>
+  	
+    <!-- FORM STARTS HERE -->
+      <form method="post" target="_blank" name="demoForm">
+      	<div class="container text-center">
+      		<div><input type="text" id="given_name" name="given_name" value="First Name*" onfocus="this.value=''" class="form-input"/></div>
+      		<div><input type="text" id="surname" name="surname" value="Last Name*" onfocus="this.value=''" class="form-input"/></div>
+      		<div><input type="text" id="lead_phone" name="lead_phone" value="Mobile Number*" onfocus="this.value=''" class="form-input"/></div>
+      		<div><input type="text" id="lead_email" name="lead_email" value="Email*" onfocus="this.value=''" class="form-input"/></div>
+      	  <div>
+      			<button type="submit" class="submit-button">Submit</button>
+      		</div>
+      	</div>
+  		</form>
+    </div>
 		<!-- FORM ENDS HERE -->
 
   </section>
@@ -57,12 +63,12 @@
   
 
 </body>
-<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
 <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<!-- <script type="text/javascript" src="js/zepto.waypoints.js"></script> -->
-<!-- <script type="text/javascript" src="js/waypoints.js"></script> -->
-<script type="text/javascript" src="js/particles.js"></script>
-<script type="text/javascript" src="js/lumin.js"></script>
+<!-- <script type="text/javascript" src="../js/zepto.waypoints.js"></script> -->
+<!-- <script type="text/javascript" src="../js/waypoints.js"></script> -->
+<script type="text/javascript" src="../js/particles.js"></script>
+<script type="text/javascript" src="../js/lumin.js"></script>
 <script>
 
 function sendRequest(input_data){
@@ -87,7 +93,7 @@ $("form").submit(function(event){
   var error = false;
   var input_data = {
     "lead_email": $("#lead_email").val(),
-    "token": $("#token").val(),
+    "token": "saoeutn23htnuo",
     "surname": $("#surname").val(),
     "given_name": $("#given_name").val(),
     "lead_phone": $("#lead_phone").val()
