@@ -46,10 +46,10 @@
     <!-- FORM STARTS HERE -->
       <form method="post" target="_blank" name="demoForm">
       	<div class="container text-center">
-      		<div><input type="text" id="given_name" name="given_name" value="First Name*" onfocus="this.value=''" class="form-input"/></div>
-      		<div><input type="text" id="surname" name="surname" value="Last Name*" onfocus="this.value=''" class="form-input"/></div>
-      		<div><input type="text" id="lead_phone" name="lead_phone" value="Mobile Number*" onfocus="this.value=''" class="form-input"/></div>
-      		<div><input type="text" id="lead_email" name="lead_email" value="Email*" onfocus="this.value=''" class="form-input"/></div>
+      		<div><input type="text" id="given_name" name="given_name" placeholder="First Name*" class="form-input"/></div>
+      		<div><input type="text" id="surname" name="surname" placeholder="Last Name*" class="form-input"/></div>
+      		<div><input type="text" id="lead_phone" name="lead_phone" placeholder="Mobile Number*" class="form-input"/></div>
+      		<div><input type="text" id="lead_email" name="lead_email" placeholder="Email*" class="form-input"/></div>
       	  <div>
       			<button type="submit" class="submit-button">Submit</button>
       		</div>
@@ -73,7 +73,7 @@
 
 function sendRequest(input_data){
   $.ajax({
-      url: "https://appt-tstx-fcistg.api.lumin.ai/lead/demo-sms",
+      url: "https://appt-tstx-demo.api.lumin.ai/lead/demo-sms",
       type: 'POST',
       dataType: 'json',
       contentType: 'application/x-www-form-urlencoded',
@@ -93,7 +93,8 @@ $("form").submit(function(event){
   var error = false;
   var input_data = {
     "lead_email": $("#lead_email").val(),
-    "token": "saoeutn23htnuo",
+    "token": "lztmpaTjITq2k60Kr7oszYg3gr1+++VZgPtL7P68J8N+Ru1iItxfO6BhFt/sz2QNJuJyx58YsiK2j48CHSmLdQ==",
+    "host_id": "demo_sms_01",
     "surname": $("#surname").val(),
     "given_name": $("#given_name").val(),
     "lead_phone": $("#lead_phone").val()
