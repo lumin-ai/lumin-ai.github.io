@@ -2,12 +2,14 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 body {
-  font-family: "Open sans", Arial, sans-serif!important;
+  font-family: "Open sans", Arial, sans-serif !important;
 }
 a {
   cursor: pointer;
 }
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   /*font-family: 'Dosis', sans-serif;*/
 }
 #hero {
@@ -23,8 +25,8 @@ h1, h2, h3 {
 }
 #hero:before {
   /*background: rgba(0,0,0,.5);*/
-  content: '';
-  background: linear-gradient(200deg, rgba(0, 0, 0, .0), rgba(0, 0, 0, 1));
+  content: "";
+  background: linear-gradient(200deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
   position: absolute;
   /*opacity: .85;*/
   top: 0;
@@ -40,12 +42,14 @@ h1, h2, h3 {
 #hero h3 {
   margin: 20px auto;
 }
-#hero h1, #hero h3 {
+#hero h1,
+#hero h3 {
   color: white;
   font-weight: 400;
   text-shadow: 0px 1px 1px black;
 }
-#hero a, #access a {
+#hero a,
+#access a {
   display: inline-block;
   background: rgba(18, 115, 188, 1);
   color: white;
@@ -57,23 +61,26 @@ h1, h2, h3 {
   font-weight: 500;
   text-decoration: none;
 }
-#hero a.demo-btn, #access a.demo-btn-2 {
+#hero a.demo-btn,
+#access a.demo-btn-2 {
   position: absolute;
   z-index: 1;
 }
 #access a.demo-btn-2 {
   top: 44px;
 }
-#hero .demo-btn.inactive, #access .demo-btn-2.inactive {
+#hero .demo-btn.inactive,
+#access .demo-btn-2.inactive {
   -webkit-animation: fadeOutRight 1s;
   animation: fadeOutRight 1s;
   z-index: -20;
 }
 .no-display {
-  display: none!important;
+  display: none !important;
   /*opacity: 0;*/
 }
-#hero .signup-input, #access .signup-input-2 {
+#hero .signup-input,
+#access .signup-input-2 {
   height: 45px;
   text-indent: 15px;
   width: 45%;
@@ -91,34 +98,45 @@ h1, h2, h3 {
   margin: 15px auto;
   width: 60%;
 }
-.signup-input::-webkit-input-placeholder, .signup-input-2::-webkit-input-placeholder {
+.signup-input::-webkit-input-placeholder,
+.signup-input-2::-webkit-input-placeholder {
   color: #343434;
 }
-.signup-input:-moz-placeholder, .signup-input-2:-moz-placeholder {
+.signup-input:-moz-placeholder,
+.signup-input-2:-moz-placeholder {
   /* Firefox 18- */
   color: #343434;
 }
-.signup-input::-moz-placeholder, .signup-input-2::-moz-placeholder {
+.signup-input::-moz-placeholder,
+.signup-input-2::-moz-placeholder {
   /* Firefox 19+ */
   color: #343434;
 }
-.signup-input:-ms-input-placeholder, .signup-input-2:-ms-input-placeholder {
+.signup-input:-ms-input-placeholder,
+.signup-input-2:-ms-input-placeholder {
   color: #343434;
 }
 #access input#saveForm.signup-btn {
   margin: 25px auto 0 auto;
 }
-#hero .active input.signup-btn, .active input.signup-btn-2 {
+#hero .active input.signup-btn,
+.active input.signup-btn-2 {
   /*border-top-left-radius: 0;*/
   /*border-bottom-left-radius: 0;*/
   /*margin-left: -5px;*/
 }
-.signup-input, .signup-input-2, .signup-btn, .signup-btn-2 {
+.signup-input,
+.signup-input-2,
+.signup-btn,
+.signup-btn-2 {
   opacity: 0;
   display: none;
 }
-.active .signup-input, .active .signup-btn, .active .signup-input-2, .active .signup-btn-2 {
-  animation: fadeInLeft .5s!important;
+.active .signup-input,
+.active .signup-btn,
+.active .signup-input-2,
+.active .signup-btn-2 {
+  animation: fadeInLeft 0.5s !important;
   opacity: 1;
   display: block;
 }
@@ -130,11 +148,12 @@ h1, h2, h3 {
 }
 section.bots {
   /*background: rgba(18, 115, 188, 1);*/
-  background: linear-gradient(180deg, blue, rgba(18, 115, 188, .65));
+  background: linear-gradient(180deg, blue, rgba(18, 115, 188, 0.65));
   padding: 70px 0;
   position: relative;
 }
-section.bots h2, section.bots h5 {
+section.bots h2,
+section.bots h5 {
   color: white;
 }
 section.bots h2 {
@@ -156,7 +175,7 @@ section.bots h5 {
 section#access {
   background: #2b303b;
   height: auto;
-  padding: 100px 0 180px 0!important;
+  padding: 100px 0 180px 0 !important;
 }
 section#access input.signup-input-2 {
   border: 1px solid #ccc;
@@ -166,8 +185,8 @@ section#access input.signup-input-2 {
   margin: 15px auto;
   height: 1px;
   background: black;
-  opacity: .15;
-  border-radius: 100%!important;
+  opacity: 0.15;
+  border-radius: 100% !important;
 }
 .ion-ios-arrow-left {
   position: absolute;
@@ -181,7 +200,8 @@ section#access input.signup-input-2 {
   top: 0;
   bottom: 0;
 }
-.ion-ios-arrow-right, .ion-ios-arrow-left {
+.ion-ios-arrow-right,
+.ion-ios-arrow-left {
   font-size: 50px;
   top: 42%;
   color: rgba(18, 115, 188, 1);
@@ -198,19 +218,20 @@ section#access input.signup-input-2 {
   z-index: 0;
   overflow: hidden;
 }
-#demo h1, #demo h3 {
+#demo h1,
+#demo h3 {
   font-weight: 400;
 }
-#demo .carousel {}
+#demo .carousel {
+}
 #demo h3 {
   margin: 15px auto;
-  margin-bottom: 25px!important;
+  margin-bottom: 25px !important;
 }
 section#carousel .seperator {
-  opacity: .5;
-  margin: 0 auto 20px auto!important;
+  opacity: 0.5;
+  margin: 0 auto 20px auto !important;
 }
-
 
 .conversation {
   width: 90%;
@@ -218,7 +239,7 @@ section#carousel .seperator {
   /*background: rgba(255,255,0,.2);*/
   font-weight: 500;
   letter-spacing: 0px;
-  font-size:15px;
+  font-size: 15px;
   margin-top: 80px;
 }
 
@@ -238,11 +259,11 @@ section#carousel .seperator {
   border-radius: 18px;
 }
 .user-chat span {
-  background: rgba(60,168,250,1);
+  background: rgba(60, 168, 250, 1);
   color: white;
 }
 .bot-chat span {
-  background: rgba(230,230,235,1);
+  background: rgba(230, 230, 235, 1);
 }
 
 /*
@@ -258,9 +279,6 @@ section#carousel .seperator {
   border-bottom-left-radius: 100%;
   z-index: -1;
 }*/
-
-
-
 
 div.bot-chat {
   text-align: left;
@@ -290,7 +308,7 @@ footer a {
   height: 120px;
   border-radius: 120px;
   position: relative;
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, .35);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.35);
 }
 
 .lumin-circle {
@@ -303,7 +321,7 @@ section.bots .circle {
   padding-top: 22px;
 }
 section.bots h3 {
-  text-shadow: 0px 1px 2px rgba(0, 0, 0, .35);
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.35);
 }
 section#reach .circle {
   width: 90px;
@@ -325,7 +343,8 @@ section#reach {
   padding-top: 40px;
   padding-bottom: 0;
 }
-section#reach h3, section#reach p {
+section#reach h3,
+section#reach p {
   color: white;
   font-weight: 400;
 }
@@ -335,7 +354,7 @@ section#reach p {
   padding-top: 10px;
   margin: 0 auto;
   line-height: 1.7;
-  opacity: .8;
+  opacity: 0.8;
 }
 section#reach h3 {
   /*font-family: "Myriad Pro", Arial;*/
@@ -344,7 +363,11 @@ section#reach h3 {
 }
 #particles-js {
   /*background: rgba(18, 115, 188, 1);*/
-  background: linear-gradient(110deg, rgba(18, 115, 188, .850), rgba(18, 115, 188, 1));
+  background: linear-gradient(
+    110deg,
+    rgba(18, 115, 188, 0.85),
+    rgba(18, 115, 188, 1)
+  );
   /*background: linear-gradient(180deg, rgba(18, 115, 188, 1), rgba(18, 115, 188, .65));*/
 }
 #reach {
@@ -373,7 +396,8 @@ section#reach h3 {
 #hero .demo-row .signup-input {
   margin: 15px 0 15px 2px;
 }
-#hero .demo-row .signup-input:first-child, #access .demo-row-2 .signup-input-2:first-child {
+#hero .demo-row .signup-input:first-child,
+#access .demo-row-2 .signup-input-2:first-child {
   margin-top: 35px;
 }
 #carousel {
@@ -383,7 +407,8 @@ section#reach h3 {
   /*background: red;*/
   /*padding-bottom: 25px;*/
 }
-#carousel h1, #carousel h3 {
+#carousel h1,
+#carousel h3 {
   width: 80%;
   margin: 0 auto;
 }
@@ -441,30 +466,35 @@ section#explore img {
 section#explore .seperator {
   margin: 30px auto 50px auto;
   background: white;
-  opacity: .3;
-  width: 75%!important;
+  opacity: 0.3;
+  width: 75% !important;
 }
 section#explore .control {
   width: 52px;
   top: 8px;
 }
-*, *:after, *:before {
+*,
+*:after,
+*:before {
   box-sizing: border-box;
 }
-.left .iphone, .right .iphone {
+.left .iphone,
+.right .iphone {
   display: none;
 }
-.left h3, .right h3 {
+.left h3,
+.right h3 {
   display: none;
 }
 #demo .active .iphone {
   animation: fadeIn 1s;
 }
 #demo .active h3 {
-  animation: fadeInDown .5s;
+  animation: fadeInDown 0.5s;
 }
 .iphone {
-  box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.3), 0 0 0 1px #999, 0 0 30px 0px rgba(0, 0, 0, 0.245);
+  box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.3), 0 0 0 1px #999,
+    0 0 30px 0px rgba(0, 0, 0, 0.245);
   border: 5px solid #d9dbdc;
   background: #f8f8f8;
   padding: 15px;
@@ -473,8 +503,8 @@ section#explore .control {
   width: 423px;
   position: relative;
   margin: -80px auto 30px auto;
-  -webkit-transform: scale(.75);
-  transform: scale(.83);
+  -webkit-transform: scale(0.75);
+  transform: scale(0.83);
   animation: fadeIn 1s;
 }
 .iphone-top {
@@ -508,12 +538,13 @@ section#explore .control {
   top: 25px;
   border-radius: 50%;
 }
-.top-bar, .bottom-bar {
+.top-bar,
+.bottom-bar {
   display: block;
   width: 423px;
   height: 15px;
-  border-left: 5px solid #BBB;
-  border-right: 5px solid #BBB;
+  border-left: 5px solid #bbb;
+  border-right: 5px solid #bbb;
   position: absolute;
   left: -5px;
 }
@@ -548,9 +579,12 @@ section#explore .control {
   background: #ccc;
   display: inline-block;
 }
-.buttons .on-off, .buttons .up, .buttons .down, .buttons .sleep {
+.buttons .on-off,
+.buttons .up,
+.buttons .down,
+.buttons .sleep {
   display: block;
-  background: #CCC;
+  background: #ccc;
   position: absolute;
   border-radius: 2px 0px 0px 2px;
 }
@@ -560,7 +594,9 @@ section#explore .control {
   top: 100px;
   left: -8px;
 }
-.buttons .up, .buttons .down, .buttons .sleep {
+.buttons .up,
+.buttons .down,
+.buttons .sleep {
   height: 60px;
   width: 5px;
   left: -10px;
@@ -587,8 +623,20 @@ section#explore .control {
   height: 68px;
   background: #ccc;
   border-radius: 50%;
-  background: -webkit-linear-gradient(315deg, #303233 0%, #b5b7b9 50%, #f0f2f2 69%, #303233 100%);
-  background: linear-gradient(135deg, #303233 0%, #b5b7b9 50%, #f0f2f2 69%, #303233 100%);
+  background: -webkit-linear-gradient(
+    315deg,
+    #303233 0%,
+    #b5b7b9 50%,
+    #f0f2f2 69%,
+    #303233 100%
+  );
+  background: linear-gradient(
+    135deg,
+    #303233 0%,
+    #b5b7b9 50%,
+    #f0f2f2 69%,
+    #303233 100%
+  );
   position: relative;
 }
 .iphone-bottom span:after {
@@ -607,7 +655,8 @@ section#explore .control {
   padding: 0 10px;
   margin-top: 20px;
 }
-.bubbledLeft, .bubbledRight {
+.bubbledLeft,
+.bubbledRight {
   margin-top: 20px;
   padding: 5px 9px;
   max-width: 50%;
@@ -622,11 +671,11 @@ section#explore .control {
   -o-border-radius: 8px 8px 8px 0px;
   -ms-border-radius: 8px 8px 8px 0px;
   border-radius: 8px 8px 8px 0px;
-  background-color: #65B045;
+  background-color: #65b045;
   color: #ffffff;
 }
 .bubbledLeft:before {
-  border-bottom: 10px solid #65B045;
+  border-bottom: 10px solid #65b045;
   border-left: 9px solid rgba(0, 0, 0, 0);
   position: absolute;
   bottom: 0;
@@ -642,11 +691,11 @@ section#explore .control {
   -o-border-radius: 8px 8px 0px 8px;
   -ms-border-radius: 8px 8px 0px 8px;
   border-radius: 8px 8px 0px 8px;
-  background-color: #07D;
+  background-color: #07d;
   color: white;
 }
 .bubbledRight:before {
-  border-bottom: 9px solid #07D;
+  border-bottom: 9px solid #07d;
   border-right: 9px solid rgba(0, 0, 0, 0);
   position: absolute;
   bottom: 0;
@@ -700,7 +749,8 @@ nav.navbar {
 #access .active .demo-btn-2 {
   display: block;
 }
-input.signup-btn, input.signup-btn-2 {
+input.signup-btn,
+input.signup-btn-2 {
   display: inline-block;
   background: rgba(18, 115, 188, 1);
   color: white;
@@ -713,12 +763,14 @@ input.signup-btn, input.signup-btn-2 {
   text-decoration: none;
   border: 0;
 }
-@media(max-width: 991px) {
-  #demo h1, #demo h3 {
+@media (max-width: 991px) {
+  #demo h1,
+  #demo h3 {
     width: 95%;
     margin: 0 auto;
   }
-  #hero h1, #hero h3 {
+  #hero h1,
+  #hero h3 {
     width: 80%;
     text-align: center;
     margin: 20px auto;
@@ -741,11 +793,13 @@ input.signup-btn, input.signup-btn-2 {
   section#reach p {
     margin: 10px auto 90px auto;
   }
-  #hero .signup-input, #access .signup-input-2 {
+  #hero .signup-input,
+  #access .signup-input-2 {
     width: 80%;
-    margin: 20px auto!important;
+    margin: 20px auto !important;
   }
-  #hero a, #access a {
+  #hero a,
+  #access a {
     position: absolute;
     right: 0;
     left: 0;
@@ -759,15 +813,17 @@ input.signup-btn, input.signup-btn-2 {
     margin: 15px auto;
   }
   #explore p {
-    width: 75%!important;
+    width: 75% !important;
     margin: 0 auto;
   }
 }
-@media(max-width: 601px) {
+@media (max-width: 601px) {
   section#hero {
     padding-top: 40px;
   }
-  section#hero h1, section#demo h1, section#explore h1 {
+  section#hero h1,
+  section#demo h1,
+  section#explore h1 {
     font-size: 5vw;
     width: 90%;
     margin: 0 auto;
@@ -776,9 +832,10 @@ input.signup-btn, input.signup-btn-2 {
     font-size: 5vw;
   }
   section.bots h5 {
-    font-size: 4vw!important;
+    font-size: 4vw !important;
   }
-  section#hero h3, section#demo h3 {
+  section#hero h3,
+  section#demo h3 {
     font-size: 3vw;
   }
   #demo .active .iphone {
@@ -789,11 +846,14 @@ input.signup-btn, input.signup-btn-2 {
     width: 100%;
   }
 }
-@media(max-width: 401px) {
-  section#hero h1, section#demo h1, section#explore h1 {
+@media (max-width: 401px) {
+  section#hero h1,
+  section#demo h1,
+  section#explore h1 {
     font-size: 7vw;
   }
-  section#hero h3, section#demo h3 {
+  section#hero h3,
+  section#demo h3 {
     font-size: 5vw;
   }
   #access a.demo-btn-2 {
@@ -813,18 +873,55 @@ input.signup-btn, input.signup-btn-2 {
 }
 
 .form-input {
-    width: 400px;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 5px;
-    border: 1px solid #cccccc;
-    color: black;
+  max-width: 1000px;
+  min-width: 250px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  color: black;
 }
 .submit-button {
-    padding: 10px;
-    width: 100px;
-    color: white;
-    background-color: rgba(18, 115, 188, 1);
-    border-radius: 5px;
-    border: 2px solid rgba(18, 115, 188, 1);
+  padding: 10px;
+  width: 100px;
+  color: white;
+  background-color: rgba(18, 115, 188, 1);
+  border-radius: 5px;
+  border: 2px solid rgba(18, 115, 188, 1);
+}
+
+.demo-left,
+.demo-right {
+  flex: 1;
+  padding: 20px;
+}
+
+.show-mobile {
+  display: block;
+}
+
+.show-desktop {
+  display: none;
+}
+.mobile-padding {
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .demo-left,
+  .demo-right {
+    flex: 50%;
+    max-width: 500px;
+  }
+
+  .form-intro {
+    display: flex;
+    justify-content: center;
+  }
+  .show-mobile {
+    display: none;
+  }
+  .show-desktop {
+    display: block;
+  }
 }

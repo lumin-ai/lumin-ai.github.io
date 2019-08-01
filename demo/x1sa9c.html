@@ -1,118 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lumin.ai - We turbocharge your human live-chat workforce</title>
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <title>Lumin.ai - We turbocharge your human live-chat workforce</title>
-  <link rel="shortcut icon" href="favicon/favicon.ico">
-    <meta name="theme-color" content="#ffffff">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
- 
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <!-- <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'> -->
+    <link rel="stylesheet" href="../css/animate.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="../css/lumin-styles.css" />
+  </head>
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-  <!-- <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'> -->
-  <link rel="stylesheet" href="../css/animate.css">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="../css/lumin-styles.css">
-</head>
-
-<body>
-  <section id="particles-js" class="bots">
-  <!-- <section class="bots"> -->
-    <div class="container">
-      <div class="row text-center">
-        <div class="lumin-circle">
-        	<img src="../img/lumin-logo.png" width="80%"/>
+  <body>
+    <section id="particles-js" class="bots">
+      <!-- <section class="bots"> -->
+      <div class="container">
+        <div class="row text-center">
+          <div class="lumin-circle">
+            <img src="../img/lumin-logo.png" width="80%" />
+          </div>
+          <h2>Lumin.ai Private Demo</h2>
+          <div class="separator"></div>
         </div>
-        <h2>Lumin.ai Private Demo</h2>
-        <div class="separator"></div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="explore">
-    <h1 class="text-center">Lead-to-Appointment Scheduling</h1>
+    <section id="explore">
+      <h1 class="text-center">Lead-to-Appointment Scheduling</h1>
 
-    <div id="registerThankyou" style="display:none">
-      <h1 class="text-center">Thank you!</h1>
-      <h4 class="text-center form-intro-text">A Lumin.ai bot has texted you on your mobile number. Interact with it to create an appointment.</h4>
-    </div>
+      <div id="registerThankyou" style="display:none">
+        <h1 class="text-center">Thank you!</h1>
+        <h4 class="text-center form-intro-text">
+          A Lumin.ai bot has texted you on your mobile number. Interact with it
+          to create an appointment.
+        </h4>
+      </div>
 
-    <div class="container form-intro" id="registerSubmit">
-	    <h4 class="text-center form-intro-text">Welcome to the Lumin.ai demo for lead-to-appointment conversion. In a real-life scenario, this would be a landing page aimed at a consumer seeking our customer's goods or services, and looking to get started by making an appointment.</h4>
-      <h6 class="text-center">Please enter your information below and press Submit.</br> You will receive a text from the bot, offering to make an appointment with you.</h6>
-  	
-    <!-- FORM STARTS HERE -->
-      <form method="post" target="_blank" name="demoForm">
-      	<div class="container text-center">
-      		<div><input type="text" id="given_name" name="given_name" placeholder="First Name*" class="form-input"/></div>
-      		<div><input type="text" id="surname" name="surname" placeholder="Last Name*" class="form-input"/></div>
-      		<div><input type="text" id="lead_phone" name="lead_phone" placeholder="Mobile Number*" class="form-input"/></div>
-      		<div><input type="text" id="lead_email" name="lead_email" placeholder="Email*" class="form-input"/></div>
-      	  <div>
-      			<button type="submit" class="submit-button">Submit</button>
-      		</div>
-      	</div>
-  		</form>
-    </div>
-		<!-- FORM ENDS HERE -->
+      <div class="form-intro" id="registerSubmit">
+        <div class="demo-left">
+          <h4 class="form-intro-text">
+            Welcome to the Lumin.ai demo for lead-to-appointment conversion. In
+            a real-life scenario, this would be a landing page marketing our
+            customer's goods or services, or a third-party lead source such as
+            Facebook or HomeAdvisor.
+          </h4>
+          <h4 class="show-desktop">
+            Consider yourself to be a potential customer of our customer. You
+            will receive a text from the bot, offering to make an appointment
+            with you.
+          </h4>
+        </div>
+        <!-- FORM STARTS HERE -->
 
-  </section>
+        <div class="demo-right">
+          <form method="post" target="_blank" name="demoForm">
+            <div class="text-center">
+              <div>
+                <input
+                  type="text"
+                  id="given_name"
+                  name="given_name"
+                  placeholder="First Name*"
+                  class="form-input"
+                />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  id="surname"
+                  name="surname"
+                  placeholder="Last Name*"
+                  class="form-input"
+                />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  id="lead_phone"
+                  name="lead_phone"
+                  placeholder="Mobile Number*"
+                  class="form-input"
+                />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  id="lead_email"
+                  name="lead_email"
+                  placeholder="Email*"
+                  class="form-input"
+                />
+              </div>
+              <div>
+                <button type="submit" class="submit-button">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <h4 class="show-mobile mobile-padding">
+          Consider yourself to be a potential customer of our customer. You will
+          receive a text from the bot, offering to make an appointment with you.
+        </h4>
+      </div>
 
-  
+      <!-- FORM ENDS HERE -->
+    </section>
+  </body>
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script
+    type="text/javascript"
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+  ></script>
+  <!-- <script type="text/javascript" src="../js/zepto.waypoints.js"></script> -->
+  <!-- <script type="text/javascript" src="../js/waypoints.js"></script> -->
+  <script type="text/javascript" src="../js/particles.js"></script>
+  <script type="text/javascript" src="../js/lumin.js"></script>
+  <script>
+    function sendRequest(input_data) {
+      $.ajax({
+        url: "https://appt-tstx-demo.api.lumin.ai/lead/demo-sms",
+        type: "POST",
+        dataType: "json",
+        contentType: "application/x-www-form-urlencoded",
+        processData: false,
+        data: JSON.stringify(input_data),
+        success: function(data) {
+          alert("Check your phone to see Lumin.ai in action.");
+        },
+        error: function() {
+          alert("Cannot get data");
+        }
+      });
+    }
 
-</body>
-<script type="text/javascript" src="../js/jquery.min.js"></script>
-<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<!-- <script type="text/javascript" src="../js/zepto.waypoints.js"></script> -->
-<!-- <script type="text/javascript" src="../js/waypoints.js"></script> -->
-<script type="text/javascript" src="../js/particles.js"></script>
-<script type="text/javascript" src="../js/lumin.js"></script>
-<script>
-
-function sendRequest(input_data){
-  $.ajax({
-      url: "https://appt-tstx-demo.api.lumin.ai/lead/demo-sms",
-      type: 'POST',
-      dataType: 'json',
-      contentType: 'application/x-www-form-urlencoded',
-      processData: false,
-      data: JSON.stringify(input_data),
-      success: function (data) {
-        alert("Check your phone to see Lumin.ai in action.");
-      },
-      error: function(){
-        alert("Cannot get data");
+    $("form").submit(function(event) {
+      event.preventDefault();
+      var error = false;
+      var input_data = {
+        lead_email: $("#lead_email").val(),
+        token:
+          "lztmpaTjITq2k60Kr7oszYg3gr1+++VZgPtL7P68J8N+Ru1iItxfO6BhFt/sz2QNJuJyx58YsiK2j48CHSmLdQ==",
+        host_id: "demo_sms_01",
+        surname: $("#surname").val(),
+        given_name: $("#given_name").val(),
+        lead_phone: $("#lead_phone").val()
+      };
+      // very rudimentary "validation"
+      // can definitely add more
+      for (var key in input_data) {
+        if (input_data[key] === "" || input_data[key].includes("*")) {
+          error = true;
+          alert("Please fill in all fields");
+          return;
+        }
       }
-  });
-};
-
-$("form").submit(function(event){
-  event.preventDefault();
-  var error = false;
-  var input_data = {
-    "lead_email": $("#lead_email").val(),
-    "token": "lztmpaTjITq2k60Kr7oszYg3gr1+++VZgPtL7P68J8N+Ru1iItxfO6BhFt/sz2QNJuJyx58YsiK2j48CHSmLdQ==",
-    "host_id": "demo_sms_01",
-    "surname": $("#surname").val(),
-    "given_name": $("#given_name").val(),
-    "lead_phone": $("#lead_phone").val()
-  }
-  // very rudimentary "validation"
-  // can definitely add more
-  for(var key in input_data){
-    if(input_data[key] === "" || input_data[key].includes("*")){
-      error = true;
-      alert("Please fill in all fields");
-      return
-    } 
-  }
-  if(error === false) {
-    $("#registerSubmit").hide();
-    $("#registerThankyou").show();
-    sendRequest(input_data)
-  }
-});
-</script>
+      if (error === false) {
+        $("#registerSubmit").hide();
+        $("#registerThankyou").show();
+        sendRequest(input_data);
+      }
+    });
+  </script>
 </html>
