@@ -175,4 +175,24 @@
       }
     });
   </script>
+  <script>
+    do {
+      var query  = new URLSearchParams( window.location.search );
+      var form   = document.getElementsByName( 'demoForm' )[ 0 ];
+      var fields = form.getElementsByTagName( 'input' );
+      for ( var idx = 0; idx < fields.length; idx++ ) {
+        var field = fields[ idx ];
+        var name  = field.name;
+        if ( !name ) {
+          continue;
+        }
+        var val   = query.get( name );
+        if ( !val ) {
+          continue;
+        }
+        field.value = val;
+        console.log( 'pre-set: [' + name + ']=[' + val + ']' );
+      }
+    } while ( false );
+  </script>
 </html>
