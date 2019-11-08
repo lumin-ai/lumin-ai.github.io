@@ -890,6 +890,27 @@ input.signup-btn-2 {
   border: 2px solid rgba(18, 115, 188, 1);
 }
 
+.submit-button.show-progress {
+    background          : linear-gradient(
+        to right,
+        rgba(    0,  0,   0, 0   )  0px,
+        rgba( 195, 241, 199, 0.5 ) 10px,
+        rgba(    0,  0,   0, 0   ) 20px
+    ), #649181;
+    background-size     : 20px 100%;
+    background-repeat   : no-repeat;
+    animation           : animation-submit-button-progress 1.4s ease-in-out infinite alternate;
+}
+
+@keyframes animation-submit-button-progress {
+    from {
+       background-position:   0% 0%;
+    }
+    to {
+       background-position: 100% 0%;
+    }
+}
+
 .demo-left,
 .demo-right {
   flex: 1;
@@ -924,4 +945,13 @@ input.signup-btn-2 {
   .show-desktop {
     display: block;
   }
+}
+
+
+.div-err {
+    font-size      : 20px;
+    color          : #a00000;
+    text-align     : center;
+    margin         : 5px;
+    min-height     : 30px;
 }

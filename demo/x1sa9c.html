@@ -108,8 +108,11 @@
                   class="form-input"
                 />
               </div>
+              <div class = "div-err" id = "div-err">
+
+              </div>
               <div>
-                <button type="submit" class="submit-button">Submit</button>
+                <button type="submit" class="submit-button" id = "submit-button" >Submit</button>
               </div>
             </div>
           </form>
@@ -133,7 +136,59 @@
   <script type="text/javascript" src="../js/particles.js"></script>
   <script type="text/javascript" src="../js/lumin.js"></script>
   <script>
+    function setProgress( show ) {
+      var btn = document.getElementById( 'submit-button' );
+      if ( !btn ) {
+        return;
+      }
+      var cssProgress = 'show-progress';
+      if ( show ) {
+          if ( !btn.classList.contains( cssProgress ) ) {
+              btn.classList.add( cssProgress );
+          }
+      } else {
+          if ( btn.classList.contains( cssProgress ) ) {
+              btn.classList.remove( cssProgress );
+          }
+      }
+    }
+
+    function setErrText( text ) {
+      var elErr = document.getElementById( 'div-err' );
+      if ( !elErr ) {
+        return;
+      }
+      if ( !text ) {
+        elErr.textContent   = ' ';
+      } else {
+        elErr.textContent   = text;
+      }
+    }
+
+    function handleRequestCompletion( got ) {
+      setProgress();
+      got || ( got = {} );
+      if ( got.ok ) { // succeeded
+        console.log( 'handleRequestCompletion: succeeded' );
+        $("#registerSubmit").hide();
+        $("#registerThankyou").show();
+        return;
+      }
+      console.log( 'handleRequestCompletion: failed' );
+      var errCode = got.error_code;
+      var errText = null;
+      if ( errCode && errCode.startsWith( 'err_ineligible' ) ) {
+          errText = 'Please fill in a valid US/Canada mobile number';
+      }
+      if ( !errText ) {
+        errText = 'Failed to process request';
+      }
+      console.log( 'handleRequestCompletion: failed with text [' + errText + ']' );
+      setErrText( errText );
+    }
+
     function sendRequest(input_data) {
+      setErrText();
       $.ajax({
         url: "https://appt-tstx-demo.api.lumin.ai/lead/demo-sms",
         type: "POST",
@@ -144,7 +199,13 @@
         error: function() {
           alert("Network error occurred. Demo might still have successfully triggered.");
         }
-      });
+      }).then( got => {
+        handleRequestCompletion( got )
+      }, ( jqXHR, textStatus, errorThrown ) => {
+        console.log( 'sendRequest: failed with status[' + textStatus + '] err[' + errorThrown + ']' );
+        handleRequestCompletion( jqXHR.responseJSON );
+      } );
+      setProgress( true );
     }
 
     $("form").submit(function(event) {
@@ -164,13 +225,13 @@
       for (var key in input_data) {
         if (input_data[key] === "" || input_data[key].includes("*")) {
           error = true;
-          alert("Please fill in all fields");
+          setErrText("Please fill in all fields");
           return;
         }
       }
       if (error === false) {
-        $("#registerSubmit").hide();
-        $("#registerThankyou").show();
+        //$("#registerSubmit").hide();
+        //$("#registerThankyou").show();
         sendRequest(input_data);
       }
     });
