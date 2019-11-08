@@ -952,6 +952,6 @@ input.signup-btn-2 {
     font-size      : 20px;
     color          : #a00000;
     text-align     : center;
-    margin         : 5px;
+    margin         : 5px 5px 15px 5px;
     min-height     : 30px;
 }
